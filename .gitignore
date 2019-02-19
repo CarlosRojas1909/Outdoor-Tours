@@ -1,0 +1,4 @@
+#ignore node_module folder
+/node_modules
+/.DS_Store
+/package-lock.json
