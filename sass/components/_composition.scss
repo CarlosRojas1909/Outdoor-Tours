@@ -1,6 +1,7 @@
 .composition {
 
     position: relative;
+    
 
     &__photo {
         width: 55%;
@@ -11,7 +12,6 @@
 
         transition: all .2s;
         outline-offset: 2rem;
-        
         
         &--p1 {
             left: 0;
@@ -32,13 +32,12 @@
             outline: 1.5rem solid $color-primary;
             transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
-
             z-index: 20;
         }
         
     }
 
-    &:hover &__photo:not(:hover) {
+    &:hover &__photo:not(:hover) { //composition:hover composition__photo:not(:hover) the composition div colapses when applying position: absolute, it means there is not height, only thing we can hover over are the images themeselves. can prove it on the developer console.
         transform: scale(.95);
     }
 }
