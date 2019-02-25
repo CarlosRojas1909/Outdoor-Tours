@@ -1,5 +1,5 @@
 .btn {
-
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -31,7 +31,7 @@
     
     &--white {
         background-color: $color-white;
-        color: $color-gray-dark;
+        color: $color-grey-dark;
 
         &::after {
             background-color: $color-white;
@@ -74,7 +74,7 @@
         display: inline-block;
         text-decoration: none;
         border-bottom: .1rem solid $color-primary;
-        padding: .3rem;
+        padding: 3px;
 
         transition: all .2s;
 
@@ -84,7 +84,7 @@
         background-color: $color-primary;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, .15);
-        transform: translateY(-.2rem)
+        transform: translateY(-2px)
     }
 
     &:active {

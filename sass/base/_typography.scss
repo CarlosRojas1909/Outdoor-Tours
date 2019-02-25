@@ -3,8 +3,7 @@ body {
     font-weight: 400;
     /* font-size: 16px; */
     line-height: 1.7;
-    color: $color-gray-dark;
-    padding: 3rem;
+    color: $color-grey-dark;
 }
 
 
@@ -25,12 +24,11 @@ body {
         font-weight: 400;
         letter-spacing: 3.5rem;
 
-        animation: moveInLeft 1.5s ease-out;
-
-        /* animation-name: moveInLeft;
-        animation-duration: 2s;
-        animation-timing-function: ease-out,ease-in etc.
-
+         animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        /*
+        animation: moveInLeft 1.5s ease-out; simplifies the 3 properties up there
         animation_iteration-count: 3;
         animation-delay: 3s; */
     }
@@ -41,7 +39,7 @@ body {
         font-weight: 700;
         letter-spacing: 1.75rem;
     
-        animation: moveInRight 1.5s ease-out;
+        animation: moveInRight 1s ease-out;
     
         /* animation-name: moveInRight;
         animation-duration: 2s;
@@ -64,7 +62,7 @@ body {
     transition: all .2s;
 
     &:hover {
-        transform: skew(15deg, 2deg) scale(1.1);
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     }
     
