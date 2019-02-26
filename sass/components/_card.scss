@@ -2,26 +2,41 @@
 
     perspective: 150rem;
     -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
 
     &__side {
         background-color: orange;
-        height: 30rem;
-        font-size: 2rem;
-        color: #fff;
-        transition: all .8s;
+
+        height: 50rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
-            background-color: red;
+            background-color: $color-white;
+
         }
         &--back {
-            background-color: blue;
             transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
 
         }
     }
 
     &:hover &__side--front { //.card:hover .car__side, when hover on card select the car-side
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 
     &:hover &__side--back { //.card:hover .car__side, when hover on card select the car-side
